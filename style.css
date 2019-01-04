@@ -1,0 +1,240 @@
+/*
+Theme Name: Imperfect
+Theme URI: http://webcoderstudio.com
+Author: Ashrafuzzaman
+Author URI: http://ashrafuzzaman.com
+Description: Imperfect brings your site to life with immersive featured images and subtle animations. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: imperfect
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.current-menu-item a{
+	color: #2ebaae !important;
+	font-weight: 700 !important;
+}
+.image img {
+	height: auto;
+}
+.author img {
+	width: auto;
+}
+.sticky{
+	position: relative;
+}
+.sticky::after {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    /*margin-right: -20px;*/
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    content: '';
+    margin-top: -20px;
+}
+
+/* WP defaults comments template style */
+@media screen and (min-width: 768px){
+    .comments-area .comment-list {
+        padding-bottom: 2em;
+    }
+}
+.comment-list {
+    padding: 0;
+    line-height: 1.6;
+}
+.comments-area ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.comments-area article {
+    position: relative;
+    padding: .6em 0;
+    margin-bottom: .8em;
+    border-bottom: 1px solid #F4F3EF;
+}
+.comment-meta {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .comment-meta .fn, .comment-meta .says, .comment-metadata, .comment-content {
+        margin-left: 84px;
+    }
+}
+.comment-meta .comment-author img {
+    display: block;
+    float: left;
+    margin: 0 1.0em 0 0;
+    border-radius: 50%;
+    max-width: 52px;
+}
+.comment-meta .comment-author .fn {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 0.2em;
+}
+.comment-metadata > a {
+    font-size: 11px;
+    font-weight: 400;
+    color: #C5CAD0;
+    border-bottom: 0;
+}
+.comment-metadata > a:hover{
+    color: #C5CAD0 !important;
+}
+.comment-meta .comment-edit-link{
+    font-size: 11px;
+    margin-left: 5px;
+}
+.comment-content {
+    padding-top: .1em;
+    clear: left;
+}
+.comment-content p {
+    margin: .8em 0 .2em 0;
+    font-size: 0.875em;
+}
+.comment .reply {
+    text-align: right;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.comments-area ol ol {
+    margin-left: 6%;
+}
+.bypostauthor > article {
+    border-color: #2ebaae;
+    border-bottom-width: 4px;
+}
+.comments-area .says{
+    display: none;
+}
+.comment-respond #cancel-comment-reply-link {
+    color: #8ACB82 !important;
+}
+.comment-respond #cancel-comment-reply-link:hover{
+    color: #65985f !important;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+.gallery-caption {
+    visibility: inherit;
+}
